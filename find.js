@@ -1,9 +1,10 @@
 // custom method implementation.
 Array.prototype.myFind = function (callback) {
   for (let i = 0; i < this.length; i++) {
-    const result = callback(this[i], i, this);
-    if (result) return this[i];
+    const bool = callback(this[i], i, this);
+    if (bool) return this[i];
   }
+  return undefined;
 };
 
 // example

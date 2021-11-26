@@ -1,11 +1,9 @@
 // custom method implementation.
 Array.prototype.myFilter = function (callback) {
-  const newArray = [];
-  for (let i = 0; i < this.length; i++) {
-    const result = callback(this[i], i, this);
-    if (result) newArray.push(this[i]);
-  }
-  return newArray;
+  const result = [];
+  for (let i = 0; i < this.length; i++)
+    callback(this[i], i, this) && (result[result.length] = this[i]);
+  return result;
 };
 
 // example
