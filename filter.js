@@ -7,6 +7,6 @@ Array.prototype.myFilter = function (callback) {
 };
 
 // example
-const array = [1, 2, 3];
+const array = [1, 2, 3, 4];
 const result = array.myFilter((x) => x !== 2);
 console.log(result);
