@@ -1,2 +1,2 @@
 # customJSArrayMethods
-Custom Javascript's forEach, filter, map, reduce, find, findIndex, concat, includes, join, pop, push Array Methods
+Custom Javascript's forEach, filter, map, reduce, find, findIndex, indexOf, concat, includes, join, pop, push, shift, unshift, splice Array Methods
