@@ -1,8 +1,7 @@
 // custom method implementation.
-Array.prototype.myIndexOf = function (element, startIndex) {
-  for (let i = startIndex ? startIndex : 0; i < this.length; i++) {
+Array.prototype.myIndexOf = function (element, index) {
+  for (let i = index ?? 0; i < this.length; i++)
     if (this[i] === element) return i;
-  }
   return -1;
 };
 
