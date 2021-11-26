@@ -5,6 +5,6 @@ Array.prototype.myConcat = function (arr) {
 
 // example
 const array = [1, 2, 3];
-const result = array.myConcat([4, 5]);
+const result = array.myConcat([4, 5, 6]);
 console.log(result);
 console.log(array);
