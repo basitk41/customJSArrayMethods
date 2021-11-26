@@ -1,11 +1,10 @@
 // custom method implementation.
 Array.prototype.myShift = function () {
-  const x = this[0],
-    len = this.length;
-  for (let i = 1; i < len; i++) {
+  const x = this[0];
+  for (let i = 1; i < this.length; i++) {
     this[i - 1] = this[i];
   }
-  this.length = len - 1;
+  this.length = this.length - 1;
   return x;
 };
 
