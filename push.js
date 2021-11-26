@@ -1,11 +1,9 @@
 // custom method implementation.
 Array.prototype.myPush = function (...x) {
-  let length = this.length;
   for (let i = 0; i < x.length; i++) {
-    this[length] = x[i];
-    length++;
+    this[this.length] = x[i];
   }
-  return length;
+  return this.length;
 };
 
 // example
