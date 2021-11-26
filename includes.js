@@ -1,8 +1,6 @@
 // custom method implementation.
 Array.prototype.myIncludes = function (x) {
-  for (let i = 0; i < this.length; i++) {
-    if (this[i] === x) return true;
-  }
+  for (let i = 0; i < this.length; i++) if (this[i] === x) return true;
   return false;
 };
 
