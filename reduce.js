@@ -1,11 +1,8 @@
 // custom method implementation.
 Array.prototype.myReduce = function (callback, init) {
   let result;
-  const array = [...this];
-  typeof init !== "undefined" ? (result = init) : (result = array.shift());
-  for (let i = 0; i < array.length; i++) {
-    result = callback(result, array[i]);
-  }
+  typeof init !== "undefined" ? (result = init) : (result = this[0]);
+  for (let i = 1; i < this.length; i++) result = callback(result, this[i]);
   return result;
 };
 
